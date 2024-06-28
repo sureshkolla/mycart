@@ -1,0 +1,122 @@
+.App {
+  text-align: center;
+}
+
+header{
+  top:0px;
+  z-index: 1;
+  border-bottom:1px solid #dadada;
+  background-color: #fff;
+}
+.app-container{
+  width: 95%;
+  margin-left:auto;
+  margin-right: auto;
+}
+.managetab-panel img{
+  max-height: 220px;
+}
+.theme-button{
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: #ff345f;
+    font-size: 16px;
+    color: #fff;
+    border-color: transparent;
+}
+.card-top {
+  margin: 0% 5%;
+ position: relative;
+ bottom: -4px;
+
+}
+.card-top h3{
+  height: 42px;
+  line-height: 32px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background-color: #ff345f;
+  font-size: 16px;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-color: transparent;
+  font-weight: bold;
+}
+footer{
+  text-align: left;
+    margin-top: 35px;
+    color: #b2b3b4;
+    line-height: 12px;
+}
+footer>div,.purpul-bg{
+  background-color: #4f008c;
+    padding: 20px;
+    border-bottom: 1px solid #8049a9;
+}
+.purpul-bg h2{
+  font-size: 26px;
+}
+.purpul-bg{
+  border-radius: 10px;
+  color: #fff;
+  
+}
+#dropdown-basic{
+  background-color: #4f008c !important;
+  border: 1px solid #dadada !important;
+}
+footer a.nav-link{
+  color: #b2b3b4;
+}
+footer .copyrights{
+  font-size: 80%;
+}
+footer .copyrights span{
+  color: #fff;
+  font-size: 22px;
+  display: inline-block;
+  margin: 5px 30px 0px 20px;
+  font-weight: bold;
+  position: relative;
+  top:2px;
+}
+.managetab-panel {
+  box-shadow: -2px -2px 7px;
+  border-radius: 0;
+  box-shadow: 0 0 5px #cfd1d4;
+}
+.border-top-bottom{
+  border-bottom:1px solid #dadada;
+  margin-bottom:20px;
+  padding:20px 0px;
+}
+select.form-select{
+  height: 52px;
+}
+.pricetag sup:first-child{
+  top:-10px;
+  right: -2px;
+}
+.pricetag sub{
+    bottom: -6px;
+    left: -26px;
+}
+.pricetag .paise{
+  font-weight: bold;
+  top:-10px;
+}
+.pricetag span{
+  font-weight: bold;
+  font-size:32px;
+}
+.navbar-toggler:focus ~ div{
+  display: block;
+}
+@media (max-width: 767px) {
+  footer a.nav-link {
+      color: #b2b3b4;
+      display: block;
+      width: 100%;
+  }
+}
