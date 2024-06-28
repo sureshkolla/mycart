@@ -33,14 +33,22 @@ const Draw = (props) => {
         setUser(data[index]);
         setEditNumber(index)
     }
-  return (   <> <div>
-        <h1>User Data</h1>
-        <input type="date" value={user.date ||""} name='myDate' onChange={changeHand} />
-        {timestamp}
-        <input type="textbox" name='username' value={user.username||''} onChange={changeHandler}/><br/>
-        <input type="number" name='age' value={user.age||''} onChange={changeHandler}/><br/>
-        <input type="textbox" name='address' value={user.address||''} onChange={changeHandler}/><br/>
-        <button onClick={submitData}>Go</button>
+  return (  
+    <> 
+    <div>
+         <h1>User Data</h1>
+        <table>
+            <tr>
+                <td colSpan={'4'}><input type="date" value={user.date ||""} name='myDate' onChange={changeHand} /> &nbsp;&nbsp; {timestamp}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input placeholder="Name" type="textbox" name='username' value={user.username||''} onChange={changeHandler}/><br/></td>
+                <td> <input type="number" placeholder="Age" name='age' value={user.age||''} onChange={changeHandler}/><br/></td>
+                <td><input placeholder="Address" type="textbox" name='address' value={user.address||''} onChange={changeHandler}/><br/></td>
+                <td> <button onClick={submitData}>Go</button></td>
+            </tr>
+        </table>  
     </div>
     <table border={1} width={'20%'} center>
         <tr><th>Id</th><th>Name</th><th>Age</th><th>Address</th><th>Action</th></tr>   
@@ -49,7 +57,9 @@ const Draw = (props) => {
             ))
         }
      </table>
-    {<p>{JSON.stringify(data)}</p>}</>
+    {
+        <p>{JSON.stringify(data)}</p>
+    }</>
   )
 };
 

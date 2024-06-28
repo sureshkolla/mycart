@@ -40,10 +40,14 @@ const deleteItem=(item)=>{
   return(
     <>
     <Draw/>
-    <input type='textbox' name='username' value={user.username || ''} onChange={changeHandler}/>
-    <input type='number' name='age' value={user.age || ''} onChange={changeHandler}/>
-    <textarea type='address' name='address' value={user.address || ''} onChange={changeHandler}/>
-    <button onClick={submitData}>Add</button>
+    <table border={1} width={'50%'}>
+      <tr>
+        <td>Suresh Babu <br/><input type='textbox' name='username' value={user.username || ''} onChange={changeHandler}/></td>
+        <td>Age <br/><input type='number' name='age' value={user.age || ''} onChange={changeHandler}/></td>
+        <td>Address <br/><textarea type='address' name='address' value={user.address || ''} onChange={changeHandler}/></td>
+        <td><button onClick={submitData}>Add</button></td>
+      </tr>
+    </table>  
     <table border='1' cellPadding={0} cellSpacing={0} width='50%'>
        <tr><th>Index</th><th>User</th><th>Action</th></tr> 
        {
